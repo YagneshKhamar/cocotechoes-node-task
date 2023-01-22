@@ -7,9 +7,22 @@ type Repo {
 
 type RepoDetail {
   name: String
+  full_name: String
   size: Int
   owner: Owner
   visibility: String
+}
+
+type RepoReadFile {
+  name: String
+  path: String
+  sha: String
+  size: Int
+  url: String
+  html_url: String
+  git_url: String
+  download_url: String
+  file_content: String
 }
 
 type Owner {
@@ -36,5 +49,6 @@ type Owner {
 type Query {
   repos(urlRoot: String, repoName: String): [Repo]
   repoDetail(urlRoot: String, repoName: String): RepoDetail
+  repoReadFile(urlRoot: String, repoName: String, getContent: Boolean): RepoReadFile
 }
 `;
