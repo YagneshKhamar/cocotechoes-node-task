@@ -14,10 +14,6 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AkshayPrajapati1999/NodeJs/issues"
-  },
-  "homepage": "https://github.com/AkshayPrajapati1999/NodeJs#readme",
   "dependencies": {
     "@apollo/server": "^4.3.0",
     "apollo-server": "^3.11.1",
